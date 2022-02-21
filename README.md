@@ -10,7 +10,7 @@ A CLI application written in Java to retrieve Formula 1 data from the F1 API - E
 ### NOTES:
 > The purpose of the CLI application is to quickly access historical data from formula seasons and return a data array with results fetched from the F1 API: https://documenter.getpostman.com/view/11586746/SztEa7bL
 > Current data returns a XML object. 
-> To return a JSON string, apend .JSON to the end of the relevant URL. Eg). final String POSTS_CIRC_API_URL = ("http://ergast.com/api/f1/"+circuits_year+"/circuits.JSON");
+> To return a JSON string, apend .JSON to the end of the relevant URL. Eg). final String POSTS_CIRC_API_URL = ("http://ergast.com/api/f1/2019/circuits.JSON");
 
 
 ### EXAMPLE:
