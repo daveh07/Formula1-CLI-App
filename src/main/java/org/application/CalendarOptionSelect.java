@@ -16,33 +16,33 @@ public class CalendarOptionSelect {
         System.out.println("Input Championship Year (eg. 2021): ");
         int calendar_year = calyearScanner.nextInt();
 
+
         // Declarations
         final int FIRST_YEAR = 1950;
         final int CURRENT_YEAR = 2022;
 
         // API circuits for year URL - Dynamic input for user to choose the championship year & round (required)
-        final String POSTS_QUAL_API_URL = ("http://ergast.com/api/f1/"+calendar_year);
+        final String POSTS_QUAL_API_URL = ("http://ergast.com/api/f1/" + calendar_year);
 
         if (calendar_year >= FIRST_YEAR && calendar_year<= CURRENT_YEAR) {
             System.out.println("You chose championship year: " + calendar_year);
             System.out.println("#---------------------Race Calendar for " + calendar_year + "-----------------------#");
 
-            // SEND HTTP REQUESTS
-            HttpClient client = HttpClient.newHttpClient();
-            HttpRequest request = HttpRequest.newBuilder()
-                    .GET()
-                    .header("accept", "application/json")
-                    .uri(URI.create(POSTS_QUAL_API_URL))
-                    .build();
-            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+                // SEND HTTP REQUESTS
+                HttpClient client = HttpClient.newHttpClient();
+                HttpRequest request = HttpRequest.newBuilder()
+                        .GET()
+                        .header("accept", "application/json")
+                        .uri(URI.create(POSTS_QUAL_API_URL))
+                        .build();
+                HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
-            // Test printing XML results & HTTP Response
-            System.out.println(response.body());
-            System.out.println(response);
-        }
-        else {
-            System.out.println("Choose a year between "+ FIRST_YEAR +" & " + CURRENT_YEAR);
-        }
+                // Test printing XML results & HTTP Response
+                System.out.println(response.body());
+                System.out.println(response);
+            } else {
+                System.out.println("Choose a year between " + FIRST_YEAR + " & " + CURRENT_YEAR);
+                getCalendarList();
+            }
     }
-
 }

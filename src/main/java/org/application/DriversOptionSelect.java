@@ -42,6 +42,7 @@ public class DriversOptionSelect {
         }
         else {
             System.out.println("Choose a year between "+ FIRST_YEAR +" & " + CURRENT_YEAR);
+            getDriversList();
         }
     }
 

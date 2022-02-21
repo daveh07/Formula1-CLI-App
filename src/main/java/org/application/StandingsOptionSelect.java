@@ -11,7 +11,7 @@ public class StandingsOptionSelect {
 
     static Scanner standingsScanner = new Scanner(System.in);
 
-    static void getCircuitsList() throws IOException, InterruptedException {
+    static void getStandingsList() throws IOException, InterruptedException {
         // System prompt for user input for championship year
         System.out.println("Input Championship Year (eg. 2021): ");
 
@@ -42,6 +42,7 @@ public class StandingsOptionSelect {
         }
         else {
             System.out.println("Choose a year between "+ FIRST_YEAR +" & " + CURRENT_YEAR);
+            getStandingsList();
         }
     }
 
