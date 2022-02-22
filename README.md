@@ -15,7 +15,8 @@ A CLI application written in Java to retrieve Formula 1 data from the F1 API - E
 
 ### EXAMPLE:
 > Return the details of all drivers that raced in the 2006 seasion:
-> (Video to be added of progam)
+
+https://user-images.githubusercontent.com/51868751/155106914-9a7b4901-db37-4513-975f-ada29d63dade.mov
 
 
 ### FURTHER FEATURES TO BE ADDED:
