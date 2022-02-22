@@ -21,7 +21,8 @@ public class DriversOptionSelect {
         final int CURRENT_YEAR = 2022;
 
         // API Drivers URL - Dynamic input for user to choose the championship year (required)
-        final String POSTS_API_URL = ("https://ergast.com/api/f1/"+drivers_year+"/drivers");
+        //JSON return
+        final String POSTS_API_URL = ("https://ergast.com/api/f1/"+drivers_year+"/drivers.JSON");
 
         if (drivers_year >= FIRST_YEAR && drivers_year<= CURRENT_YEAR) {
             System.out.println("You chose championship year: " + drivers_year);
