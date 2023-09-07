@@ -12,6 +12,13 @@ A CLI application written in Java to retrieve Formula 1 data from the F1 API - E
 > Current data returns a XML object. 
 > To return a JSON string, apend .JSON to the end of the relevant URL. Eg). final String POSTS_CIRC_API_URL = ("http://ergast.com/api/f1/2019/circuits.JSON");
 
+
+### EXAMPLE:
+> Return the details of all drivers that raced in the 2006 seasion:
+
+https://user-images.githubusercontent.com/51868751/155106914-9a7b4901-db37-4513-975f-ada29d63dade.mov
+
+
 ### FURTHER FEATURES TO BE ADDED:
 <li>Parsing the JSON data and formatting the object to be easily read</li>
 <li>Testing modules using Junit</li>

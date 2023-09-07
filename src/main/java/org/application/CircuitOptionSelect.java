@@ -7,10 +7,16 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.Scanner;
 
+
 public class CircuitOptionSelect {
 
     static Scanner circScanner = new Scanner(System.in);
 
+    /**
+     *
+     * @throws IOException
+     * @throws InterruptedException
+     */
     static void getCircuitsList() throws IOException, InterruptedException {
         // System prompt for user input for championship year
         System.out.println("Input Championship Year (eg. 2021): ");

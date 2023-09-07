@@ -6,6 +6,12 @@ import java.util.Scanner;
 
 public class App 
 {
+    /**
+     *
+     * @param args
+     * @throws IOException
+     * @throws InterruptedException
+     */
     public static void main( String[] args ) throws IOException, InterruptedException {
         Scanner scanner = new Scanner(System.in);
 

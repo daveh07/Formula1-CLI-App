@@ -11,6 +11,11 @@ public class CalendarOptionSelect {
 
     static Scanner calyearScanner = new Scanner(System.in);
 
+    /**
+     *
+     * @throws IOException
+     * @throws InterruptedException
+     */
     static void getCalendarList() throws IOException, InterruptedException {
         // System prompt for user input for championship year
         System.out.println("Input Championship Year (eg. 2021): ");
