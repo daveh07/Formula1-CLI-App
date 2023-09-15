@@ -55,7 +55,6 @@ public class CalendarOptionSelect {
             System.out.println("Invalid input. Please enter a valid year (e.g., 2021).");
             calyearScanner.nextLine(); // Consume the invalid input
             return; // Exit the method or handle it accordingly
-
         }
     }
 }
